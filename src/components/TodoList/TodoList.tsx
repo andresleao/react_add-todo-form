@@ -8,8 +8,8 @@ type TodoListPros = {
 export const TodoList = ({ todos }: TodoListPros) => {
   return (
     <section className="TodoList">
-      {todos.map(t => (
-        <TodoInfo key={t.id} todo={t} />
+      {todos.map(todo => (
+        <TodoInfo key={todo.id} todo={todo} />
       ))}
     </section>
   );
